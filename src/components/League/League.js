@@ -19,10 +19,8 @@ const League = (props) => {
     
 
     return (
-                
-        
         <div className="col-12 com-sm-6 col-md-4 mb-4">
-            <div className="card h-100 p-3">
+            <div className="card h-100 p-3 text-center">
                 <img src={logo.strLogo} className="card-img-top w-75 mx-auto" alt=""/>
                 <div className="card-body">
                     <h4>{strLeague}</h4>
@@ -31,11 +29,6 @@ const League = (props) => {
                 </div>
             </div>
         </div> 
-
-
-
-         
-        
     );
 }
 
