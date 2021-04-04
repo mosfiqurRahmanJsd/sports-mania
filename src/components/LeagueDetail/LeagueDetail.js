@@ -17,7 +17,7 @@ const LeagueDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setLeagueDetail(data.leagues[0]))
-    }, []) 
+    }, [id]) 
 
     const { strBanner, strLeague, dateFirstEvent, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strRSS  } = leagueDetail; 
 
