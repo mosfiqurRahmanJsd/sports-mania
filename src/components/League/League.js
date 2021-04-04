@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 
 const League = (props) => {
     const { idLeague, strLeague, strSport } = props.league; 
@@ -25,7 +28,7 @@ const League = (props) => {
                 <div className="card-body">
                     <h4>{strLeague}</h4>
                     <p>Sports Type: {strSport}</p>
-                    <button className="btn btn-primary" onClick={() => showDetail(idLeague)}>Explore</button>
+                    <button className="btn btn-primary" onClick={() => showDetail(idLeague)}> Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
             </div>
         </div> 
