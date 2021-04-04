@@ -42,7 +42,7 @@ const LeagueDetail = () => {
         <div style={colorBg}>
             <img src={strBanner} className="w-100 img-fluid" alt=""/>
             <div className="container text-muted">
-                <div className="row bg-primary text-white p-3 my-4 rounded">
+                <div className="row bg-primary text-white p-3 my-4 rounded d-flex align-items-center">
                     <div className="col-12 col-sm-12 col-md-6">
                         <h3>{strLeague}</h3>
                         <p><FontAwesomeIcon icon={faMapMarkerAlt} />  Founded: {dateFirstEvent}</p>
