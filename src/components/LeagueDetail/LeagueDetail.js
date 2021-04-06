@@ -20,7 +20,7 @@ const LeagueDetail = () => {
         .then(data => setLeagueDetail(data.leagues[0]))
     }, [id]) 
 
-    const { strBanner, strLeague, dateFirstEvent, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strRSS  } = leagueDetail; 
+    const { strBanner, strLogo, strLeague, dateFirstEvent, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strRSS  } = leagueDetail; 
 
     let img = ""; 
     if(strGender === "Male") {
@@ -42,7 +42,9 @@ const LeagueDetail = () => {
     
     return (
         <div style={colorBg}>
-            <img src={strBanner} className="w-100 img-fluid" alt=""/>
+            <div className="banner">
+                <img src={strBanner} className="w-100 img-fluid" alt=""/>
+            </div>
             <div className="container text-muted">
                 <div className="row bg-primary text-white p-3 my-4 rounded d-flex align-items-center">
                     <div className="col-12 col-sm-12 col-md-6">
