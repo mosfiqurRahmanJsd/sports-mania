@@ -6,6 +6,7 @@ import { faMapMarkerAlt, faFlag, faFootballBall, faMars, faRss } from '@fortawes
 
 
 
+
 import Male from '../../images/male.png'
 import Female from '../../images/female.png'
 
@@ -38,6 +39,7 @@ const LeagueDetail = () => {
         fontSize: "30px", 
         marginTop: "20px"
     }
+    
     return (
         <div style={colorBg}>
             <img src={strBanner} className="w-100 img-fluid" alt=""/>
@@ -58,11 +60,13 @@ const LeagueDetail = () => {
                 <p>{strDescriptionFR}</p>
 
                 <div className="d-flex justify-content-center">
+
                     <ul className="list-unstyled d-flex">
-                        <li style={linkedIcon}><a href={strTwitter}><FontAwesomeIcon icon={faTwitter} />  </a></li>
-                        <li style={linkedIcon}><a href={strFacebook}><FontAwesomeIcon icon={faFacebook} /> </a></li>
-                        <li style={linkedIcon}><a href={strRSS}><FontAwesomeIcon icon={faRss} /> </a></li>
+                        <li style={linkedIcon}><a href={`https://${strTwitter}`}><FontAwesomeIcon icon={faTwitter} />  </a></li>
+                        <li style={linkedIcon}><a href={`https://${strFacebook}`}><FontAwesomeIcon icon={faFacebook} /> </a></li>
+                        <li style={linkedIcon}><a href={`https://${strRSS}`}><FontAwesomeIcon icon={faRss} /> </a></li>
                     </ul>
+
                 </div>
             </div>  
         </div>             
